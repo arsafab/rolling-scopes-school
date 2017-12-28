@@ -1,0 +1,21 @@
+footer {
+    width: 100%;
+    height: 100px;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+
+    a {
+        font-size: 5rem;
+        color: #000;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $main-color;
+            transition: all .4s;
+        }
+    }
+}

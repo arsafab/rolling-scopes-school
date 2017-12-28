@@ -1,0 +1,30 @@
+.start-game-block {
+        &.container {
+            padding: 15rem 1.5rem;
+        }    
+
+    h2 {
+        margin-bottom: 100px;
+
+        @media screen and (max-width: $sm-breakpoint) {
+            margin-bottom: 50px;
+        }
+    }
+
+    p {
+        margin-bottom: 50px;
+        font-size: 3.2rem;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000;
+
+        @media screen and (max-width: 480px) {
+            font-size: 2.5rem;
+        }
+    }
+
+    a {
+        @include button(0.5rem);
+        margin-bottom: 80px;
+    }
+}

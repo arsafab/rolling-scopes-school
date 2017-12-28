@@ -1,0 +1,9 @@
+@media screen and (max-width: 1600px) {
+    .container {
+        max-width: 970px;
+    }
+
+    .banners-block {
+        grid-template-rows: repeat(2, 169px);
+    }
+}

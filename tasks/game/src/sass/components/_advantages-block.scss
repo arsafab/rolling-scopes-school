@@ -1,0 +1,32 @@
+.advantages-block {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 85px 0 0 0;
+
+        @media screen and (max-width: 1000px) {
+            justify-content: space-around;
+        }
+    }
+
+    figure {
+        max-width: 310px;
+        margin: 0 0 105px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    figcaption {
+        margin-top: 40px;
+        font-size: 2.4rem;
+    }
+
+    img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}

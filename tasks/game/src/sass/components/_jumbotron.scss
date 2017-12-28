@@ -1,0 +1,57 @@
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 880px;
+    background: url('../img/landing/bgJumbotron.jpg');
+
+    @media screen and (max-width: $sm-breakpoint) {
+        min-height: 700px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 880px;
+        padding: 0 15px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+
+        @media screen and (max-width: $sm-breakpoint) {
+            min-height: 700px;
+        }
+    }
+
+    a {
+        @include button(1rem);
+        position: relative;
+        top: 55px;
+    } 
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 785px;
+    margin: 0 auto;
+    font-family: Oxygen, Lato, Arial, sans-serif;
+    font-size: 7rem;
+    text-transform: uppercase;
+    word-spacing: 0.6rem;
+    text-align: center;
+    color: #fff;
+
+    @media screen and (max-width: $sm-breakpoint) {
+        font-size: 5rem;
+    }
+
+    small {
+        position: relative;
+        bottom: 10px;
+        font-family: 'Comic Sans MS5', cursive;
+        font-size: 2.8rem;
+        font-weight: normal;
+    }
+}
+

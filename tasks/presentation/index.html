@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>CSS Grid Layout</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>CSS Grid Layout</h2>
+					<small>by <a href="https://github.com/arsafab">Dzmitry Bely</a></small>
+				</section>
+
+				<section>
+					<h3>Plan:</h3>
+					<ol>
+						<li class="fragment" data-fragment-index="1">Layout Techniques</li>
+						<li class="fragment" data-fragment-index="2">Definition</li>
+						<li class="fragment" data-fragment-index="3">Grid or Flexbox</li>
+						<li class="fragment" data-fragment-index="4">Terminology</li>
+						<li class="fragment" data-fragment-index="5">Grid vs Bootstrap</li>
+			   		</ol>
+				</section>
+				
+				<section>
+					<section>
+						<img src="./images/2.jpg">
+					</section>
+
+					<section>
+						<img src="./images/3.jpg">
+					</section>
+
+					<section>
+						<img src="./images/1.jpg">
+					</section>
+
+					<section>
+						<h4>Layout Techniques</h4>	
+						<ul>
+							<li class="fragment" data-fragment-index="1">Tables</li>
+							<li class="fragment" data-fragment-index="2">Float</li>
+							<li class="fragment" data-fragment-index="3">CSS Frameworks</li>
+							<li class="fragment" data-fragment-index="4">Flexbox</li>
+							<li class="fragment" data-fragment-index="5">Grid</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Tables</h3>
+						<div class="floatBlocks">
+							<ul class="fragment" data-fragment-index="1">
+								<li>similar to real tables</li>
+								<li>it works</li>
+							</ul>
+							
+							<ul class="fragment" data-fragment-index="2">
+								<li>layout is not a tabular data</li>
+								<li>empty cells</li>
+								<li>table layout may be unpredictable</li>
+								<li>mix concepts of layout and content</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<h3>Float</h3>
+
+						<div class="floatBlocks">
+							<ul class="fragment" data-fragment-index="1">
+								<li>less html code</li>
+								<li>great to float images</li>
+							</ul>
+								
+							<ul class="fragment" data-fragment-index="2">
+								<li>harder to achieve</li>
+								<li>hard to maintain</li>
+								<li>clearfixes hell</li>
+								<li>many divs</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<h3>display: table</h3>
+
+						<p>the same problems as tables in html</p>
+					</section>
+
+					<section>
+						<h3>Flexbox</h3>
+
+						<div class="floatBlocks">
+							<ul class="fragment" data-fragment-index="1">
+								<li>cool and fresh</li>
+								<li>easy use and maintain</li>
+								<li>meaningsful</li>
+								<li>responsive</li>
+								<li>crossbrowser support</li>
+							</ul>
+								
+							<ul class="fragment" data-fragment-index="2">
+								<li>one dimensional</li>
+								<li>no row/colspan</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<h3>CSS-frameworks</h3>
+	
+						<div class="floatBlocks">
+							<ul class="fragment" data-fragment-index="1">
+								<li>too many frameworks</li>
+								<li>not our problem</li>
+							</ul>
+									
+							<ul class="fragment" data-fragment-index="2">
+								<li>cheating</li>
+								<li>new class in language to learn</li>
+								<li>maintenance</li>
+								<li>mixability</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<h3>Grid</h3>
+
+						<ul>
+							<li>not many divs</li>
+							<li>semantic html</li>
+							<li>meaningsfull CSS</li>
+							<li>easy to maintain</li>
+							<li>easy to replace</li>
+							<li>no dependences</li>
+							<li>less code</li>
+						</ul>
+					</section>
+				</section>	
+
+				<section>
+					<section>
+						<h3>What is Grid Layout?</h3>
+
+						<p>CSS layout method designed for the two-dimensional layout of items on a webpage or application.</p>
+					</section>
+
+					<section>
+						<h3>Browser support</h3>
+
+						<img src="./images/support.png">
+					</section>
+
+					<section>
+						<h3>Examples:</h3>
+
+						<img src="./images/example1.png">
+					</section>
+
+					<section>
+						<img src="./images/example2.png">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Grid or Flexbox</h3>
+
+						<ul>
+							<li class="fragment" data-fragment-index="1">Grid can do things Flexbox can't do</li>
+							<li class="fragment" data-fragment-index="2">Flexbox can do things Grid can't do</li>
+							<li class="fragment" data-fragment-index="3">They can work together</li>
+						</ul>
+					</section>
+					
+					<section>
+						<h3>If we use Flexbox</h3>
+						<img src="./images/2.gif">
+					</section>
+
+					<section>
+						<h3>If we use Grid Layout</h3>
+						<img src="./images/1.gif">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Grid terminology</h2>
+					</section>
+					
+					<section>
+						<h2>Grid line</h2>
+						<img src="./images/terminology1.png">
+					</section>
+
+					<section>
+						<h2>Grid track</h2>
+						<img src="./images/terminology2.png">
+					</section>
+
+					<section>
+						<h2>Grid cell</h2>
+						<img src="./images/terminology3.png">
+					</section>
+
+					<section>
+						<h2>Grid area</h2>
+						<img src="./images/terminology4.png">
+					</section>
+
+					<section>
+						<h3>Documentation</h3>
+						<a href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Grid_Layout">
+						MDN about Grid Layout</a>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Grid vs Bootstrap</h3>
+
+						<pre>
+							<code data-trim data-noescape class="fragment" data-fragment-index="1">
+								.container {
+									margin-left: auto;
+									margin-right: auto;
+									padding-left: 15px;
+									padding-right: 15px;
+								}
+							</code>
+							<code data-trim data-noescape class="fragment" data-fragment-index="2">
+								@media (min-width: 992px) {
+									.container {
+										width: 970px;
+									}
+								}
+							</code>
+						</pre>	
+					</section>
+					<section>
+						<pre>
+							<code data-trim data-noescape>
+								.row {
+									display: grid;
+									grid-template-columns: repeat(12, 1fr);
+									grid-gap: 20px;
+								}
+							</code>
+							<code data-trim data-noescape class="fragment" data-fragment-index="1">
+								@media (min-width: 992px) {
+									.col-md-6 {
+										grid-column: span 6;
+									}
+								}
+							</code>
+						</pre>
+					</section>	
+
+					<section>
+						<h3>Conclusion:</h3>
+
+						<ul>
+							<li>no floats</li>
+							<li>no padding</li>
+							<li>no clearfix</li>
+							<li>no negative margins</li>
+							<li>no display: table</li>
+							<li>result is the same</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h3>Useful links</h3>
+
+					<ul>
+						<li><a href="http://cssgridgarden.com/">cssgridgarden.com</a></li>
+						<li><a href="https://gridbyexample.com/examples/">grid examples</a></li>
+						<li><a href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Grid_Layout">MDN</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+.usage-block {
+    background: url('../img/landing/bgUsage.jpg');
+
+    figure::before {
+        @media screen and (max-width: 645px) {
+            top: -70%;
+        }
+    }
+
+    figcaption {
+        @media screen and (max-width: 645px) {
+            margin: 0 auto;
+        }
+    }
+}

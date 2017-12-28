@@ -15,3 +15,12 @@ These are task for the Rolling Scopes school where I was a student from Septembe
     * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/finite-state-machine">Finite State Machine</a>
 
 ### Stage II
+
+* <a href="https://www.codeschool.com/users/arsafab">Chrome Dev Tools Online Course</a>
+* <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/positions-and-floats">Positions and Floats</a>
+* <a href="https://www.codewars.com/users/arsafab">Codewars</a>
+* <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/presentation">Presentation</a>
+* <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/match-match-game">Match-Match-Game</a>
+* <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/css-recipes-and-layouts">CSS Recipes and Layouts</a>
+* <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/game">Game</a>
+* <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/binary-search-tree">Data Structures Workshop</a>
