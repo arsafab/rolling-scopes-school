@@ -1,0 +1,89 @@
+  @font-face {
+			font-family: 'Open Sans';
+			src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+			src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+			url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: 'Open Sans';
+			src: url("../fonts/OpenSansBold/OpenSansBold.eot");
+			src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+			url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: bold;
+	}
+
+	@font-face {
+			font-family: 'Open Sans';
+			src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot");
+			src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.woff") format("woff"),
+			url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.ttf") format("truetype");
+			font-style: italic, oblique;
+			font-weight: bold;
+	}
+
+	@font-face {
+			font-family: 'Open Sans';
+			src: url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.eot");
+			src: url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.woff") format("woff"),
+			url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.ttf") format("truetype");
+			font-style: italic, oblique;
+			font-weight: normal;
+	}
+
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: none;
+}
+body { margin: 0; font-size: 14px; line-height: 1.61; font-weight: 400; }
+body, button, input, select, textarea { font-family: 'Open Sans', sans-serif; color: #333; }
+
+a { color: #12C; }
+a:visited { color: #61C; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { color: #c00; outline: 0; }
+
+b, strong { font-weight: bold; }
+pre, code { font-family: monospace, monospace; font-size: 1em; }
+ul, ol { margin: 1em 0; padding: 0 0 0 20px; }
+img { border: 0; max-width: 100%; }
+
+body { background: #fff; }
+header, footer, .container, .header { max-width: 45em; margin: 0 auto; }
+
+header, .header { padding: 0 0.5em; color: #C90B0B; }
+header img, .header img { border-radius: 40px; float: left; }
+header p, .header p { font-size:1.5em; font-weight: bold; padding-left: 4em;}
+header p span, .header p span { font-size: 0.8em; font-weight: normal;}
+
+.hero { padding: 2em; background-color: #f8f8f8; font-size:1.2em;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.content { padding: 1em 1em; }
+.content li { list-style-type: none; font-size: 1.1em;}
+li img { float:left; padding-right: 1em; }
+li p { font-size: 0.9em; font-style: italic; }
+
+footer {
+  padding: 0 0.5em;
+  border-top: 1px solid #ccc;
+}
+footer span { float: right; font-style: italic; }
+
+/* Smartphones (portrait) */
+@media only screen and (max-width: 480px) {
+  body { font-size: 12px;}
+  header p, .header p { padding-left: 4.5em;}
+}
