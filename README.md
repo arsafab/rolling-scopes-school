@@ -1,6 +1,8 @@
 # rolling-scopes-school
 These are task for the Rolling Scopes school where I was a student from September 2017 till February 2018
 
+#### <a href="https://arsafab.github.io/rolling-scopes-school/">rolling-scopes-school</a>
+
 ### Stage I
 1. Front-end basics
     * <a href="https://www.codecademy.com/arsafab">Codeacademy</a>
