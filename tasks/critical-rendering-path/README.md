@@ -1,6 +1,6 @@
-<a href="https://arsafab.github.io/rolling-scopes-school/tasks/critical-rendering-path">https://arsafab.github.io/rolling-scopes-school/tasks/critical-rendering-path</a>
-<a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/critical-rendering-path/index.html">https://arsafab.github.io/rolling-scopes-school/tasks/critical-rendering-path/index.html</a> 
-<a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Farsafab.github.io%2Frolling-scopes-school%2Ftasks%2Fcritical-rendering-path%2Findex.html">https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Farsafab.github.io%2Frolling-scopes-school%2Ftasks%2Fcritical-rendering-path%2Findex.html</a>
+* <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/critical-rendering-path">https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/critical-rendering-path</a>
+* <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/critical-rendering-path/index.html">https://arsafab.github.io/rolling-scopes-school/tasks/critical-rendering-path/index.html</a> 
+* <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Farsafab.github.io%2Frolling-scopes-school%2Ftasks%2Fcritical-rendering-path%2Findex.html">https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Farsafab.github.io%2Frolling-scopes-school%2Ftasks%2Fcritical-rendering-path%2Findex.html</a>
 
 ### Что я сделал:
 
