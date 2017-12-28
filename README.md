@@ -3,18 +3,15 @@ These are task for the Rolling Scopes school where I was a student from Septembe
 
 ### Stage I
 1. Front-end basics
-    * <a href="">Codeacademy</a>
-    * <a href="">Critical rendering path</a>
+    * <a href="https://www.codecademy.com/arsafab">Codeacademy</a>
+    * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/critical-rendering-path">Critical rendering path</a>
 2. Algorithms
-    * <a href="">Brackets</a>
-    * <a href="">Product</a>
-    * <a href="">Zeros</a>
-    * <a href="">Doubly Linked List</a>
-    * <a href="">Guessing game</a>
-    * <a href="">Tic Tac Toe</a>
-    * <a href="">Finite State Machine</a>
+    * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/brackets">Brackets</a>
+    * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/product">Product</a>
+    * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/zeros">Zeros</a>
+    * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/doubly-linked-list">Doubly Linked List</a>
+    * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/guessing-game">Guessing game</a>
+    * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/tic-tac-toe">Tic Tac Toe</a>
+    * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/finite-state-machine">Finite State Machine</a>
 
 ### Stage II
-
-
-### Stage III
