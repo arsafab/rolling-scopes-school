@@ -90,12 +90,22 @@ h2 {
     h1 {
         font-size: 2em; 
     }
-}
 
-@media (max-width: 800px) {
     h2 {
         margin-top: 20px;
         margin-bottom: 10px;
         font-size: 1.8em; 
+    }
+}
+
+@media (max-width: 450px) {
+    .container td {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 340px) {
+    .container td {
+        font-size: 0.7em;
     }
 }
