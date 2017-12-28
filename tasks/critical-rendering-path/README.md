@@ -1,8 +1,8 @@
-<a href="https://github.com/arsafab/frontend-nanodegree-mobile-portfolio/tree/gh-pages">https://github.com/arsafab/frontend-nanodegree-mobile-portfolio/tree/gh-pages</a>
-<a href="https://arsafab.github.io/frontend-nanodegree-mobile-portfolio/index.html">https://arsafab.github.io/frontend-nanodegree-mobile-portfolio/index.html</a> 
-<a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Farsafab.github.io%2Ffrontend-nanodegree-mobile-portfolio%2Findex.html">https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Farsafab.github.io%2Ffrontend-nanodegree-mobile-portfolio%2Findex.html</a>
+<a href="https://arsafab.github.io/rolling-scopes-school/tasks/critical-rendering-path">https://arsafab.github.io/rolling-scopes-school/tasks/critical-rendering-path</a>
+<a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/critical-rendering-path/index.html">https://arsafab.github.io/rolling-scopes-school/tasks/critical-rendering-path/index.html</a> 
+<a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Farsafab.github.io%2Frolling-scopes-school%2Ftasks%2Fcritical-rendering-path%2Findex.html">https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Farsafab.github.io%2Frolling-scopes-school%2Ftasks%2Fcritical-rendering-path%2Findex.html</a>
 
-##Что я сделал:
+### Что я сделал:
 
 * добавил информацию о себе
 * оптимизировал изображения в фотошопе и с помощью file optimizer, после залил их на хостинг картинок и прописал ссылки в html. Таким образом я избежал проблем с кэшированием
