@@ -81,7 +81,7 @@ Game.prototype.fillCards = function(folder, [col, row]) {
     let index = 0;
 
     while(limit) {
-        this.cards.push(new Card(folder, index));
+        this.cards.push(new Card(folder.toLowerCase(), index));
 
         index += 1;
         limit -= 1;
