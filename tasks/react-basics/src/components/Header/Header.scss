@@ -1,0 +1,28 @@
+header {
+    .head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .search-input {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 15px;
+        color: #000;
+
+        input {
+            max-width: 70%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        a {
+            margin-right: 15px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+}

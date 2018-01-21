@@ -1,0 +1,9 @@
+body {
+  padding: 15px 0;
+  font-family: sans-serif; }
+
+.btn-small {
+  font-size: 11px;
+  padding: 3px 5px; }
+  .btn-small:hover, .btn-small:focus {
+    outline: none; }

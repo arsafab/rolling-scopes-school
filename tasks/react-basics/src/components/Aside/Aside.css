@@ -1,0 +1,45 @@
+.category-input {
+  display: flex; }
+  .category-input button {
+    max-height: 34px; }
+
+.categories {
+  position: relative; }
+  .categories a {
+    margin: 0 5px;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+  .categories a.active {
+    font-weight: bold;
+    outline: none; }
+  .categories .subitems {
+    margin-top: 5px;
+    border-top: 1px solid #000; }
+    .categories .subitems span {
+      border: none; }
+  .categories .edit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem; }
+    .categories .edit input {
+      width: 80%;
+      height: 100%;
+      padding: 0 5px; }
+    .categories .edit button {
+      border-radius: 0;
+      position: relative;
+      top: -1px;
+      width: 20%;
+      height: 100%; }
+  .categories .btnGroup {
+    display: flex; }
