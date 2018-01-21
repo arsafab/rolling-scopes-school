@@ -1,4 +1,4 @@
-* <a href="https://arsafab.github.io/rolling-scopes-school/tasks/react-basics/index.html">Build</a>
+* <a href="https://arsafab.github.io/rolling-scopes-school/tasks/react-basics/build/index.html">Build</a>
 
 ### `npm start`
 
