@@ -1,3 +1,5 @@
+* <a href="https://arsafab.github.io/rolling-scopes-school/tasks/react-basics/index.html">Build</a>
+
 ### `npm start`
 
 Runs the app in the development mode.<br>

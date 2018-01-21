@@ -27,3 +27,7 @@ These are task for the Rolling Scopes school where I was a student from Septembe
 * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/game">Game</a>
 * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/binary-search-tree">Data Structures</a>
 * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/websocket">Websocket</a>
+
+### Stage II
+
+* <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/react-basics">React Basics</a>
