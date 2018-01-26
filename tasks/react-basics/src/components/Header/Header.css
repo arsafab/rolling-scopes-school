@@ -1,7 +1,8 @@
 header .head {
   display: flex;
   align-items: center;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  justify-content: center; }
 
 header .search-input {
   display: flex;

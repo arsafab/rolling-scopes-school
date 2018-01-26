@@ -7,19 +7,32 @@ import { updateStore } from '../Redux/actions';
 class Task extends React.Component {
     constructor(props) {
         super(props);
+        this.items = [];
         this.tasks = {
             tasks: this.props.location.query.arr,
         };
+
         this.state = {
             title: this.props.location.query.task.title,
             isDone: this.props.location.query.task.isDone,
             text: this.props.location.query.task.text,
+            activeItem: this.props.location.query.activeItem,
+            targetItem: {},
         };
 
         this.changeTitle = this.changeTitle.bind(this);
         this.isDone = this.isDone.bind(this);
         this.changeText = this.changeText.bind(this);
         this.submitTaskChanges = this.submitTaskChanges.bind(this);
+        this.initTargetItem = this.initTargetItem.bind(this);
+        this.moveintoItem = this.moveIntoItem.bind(this);
+
+        this.extractItems(this.props.store);
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.items.length = 0;
+        this.extractItems(nextProps.store);
     }
 
     changeTitle(e) {
@@ -44,8 +57,40 @@ class Task extends React.Component {
         this.props.location.query.task.title = this.state.title;
         this.props.location.query.task.isDone = this.state.isDone;
         this.props.location.query.task.text = this.state.text;
+        this.moveIntoItem();
 
         this.props.dispatch(updateStore());
+    }
+
+    extractItems(arr) {
+        arr.forEach((item) => {
+            this.items.push(item);
+            if (item.subitems.length) this.extractItems(item.subitems);
+        });
+    }
+
+    initTargetItem(item) {
+        this.setState({
+            targetItem: item,
+        });
+    }
+
+    moveIntoItem() {
+        if (this.state.targetItem.title) {
+            this.state.activeItem.tasks.forEach((item, i) => {
+                if (item.title === this.props.match.params.taskTitle) {
+                    const tempActive = this.state.activeItem.tasks.splice(i, 1);
+                    const tempTarget = this.state.targetItem.tasks.unshift(item);
+
+                    this.setState({
+                        activeItem: tempActive,
+                        targetItem: tempTarget,
+                    });
+
+                    this.props.dispatch(updateStore());
+                }
+            });
+        }
     }
 
     render() {
@@ -76,6 +121,7 @@ class Task extends React.Component {
                         </div>
 
                         <input
+                            className="form-control"
                             defaultValue={this.props.match.params.taskTitle}
                             onChange={this.changeTitle}
                         />
@@ -97,6 +143,22 @@ class Task extends React.Component {
                                 onChange={this.changeText}
                             />
                         </FormGroup>
+
+                        <div className="move-block">
+                            <h3>Move to:</h3>
+                            {
+                                this.items.map((item, i) => (
+                                    <button
+                                        className="btn btn-success"
+                                        key={i}
+                                        disabled={this.state.targetItem.title === item.title}
+                                        onClick={this.initTargetItem.bind(this, item)}
+                                    >
+                                        {item.title}
+                                    </button>
+                                ))
+                            }
+                        </div>
                     </div>
                 </main>
             </Col>

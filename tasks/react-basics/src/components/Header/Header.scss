@@ -3,6 +3,8 @@ header {
         display: flex;
         align-items: center;
         margin-bottom: 15px;
+        justify-content: center;
+
     }
 
     .search-input {
@@ -11,6 +13,8 @@ header {
         align-items: center;
         margin-top: 15px;
         color: #000;
+
+        
 
         input {
             max-width: 70%;

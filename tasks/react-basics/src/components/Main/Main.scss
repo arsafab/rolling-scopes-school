@@ -58,6 +58,7 @@ main {
     .btnGroup {
         display: flex;
         justify-content: flex-end; 
+        margin-bottom: 15px;
 
         a {
             display: block;
@@ -84,5 +85,12 @@ main {
     textarea {
         resize: none;
         min-height: 200px;
+    }
+
+    .move-block {
+        button {
+            margin-right: 5px;
+            margin-bottom: 10px;
+        }
     }
 }

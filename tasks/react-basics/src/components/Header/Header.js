@@ -69,7 +69,7 @@ class Header extends React.Component {
         return (
             <header>
                 <Row className="show-grid head">
-                    <Col md={6}>
+                    <Col xsHidden md={6}>
                         <NavLink to='/'>
                             <Logo />
                         </NavLink>
