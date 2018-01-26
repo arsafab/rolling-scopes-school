@@ -1,4 +1,4 @@
-#Link to the demo
+# Link to the demo
 <a href="https://arsafab.github.io/rolling-scopes-school/tasks/angular-basics/dist/index.html">CLICK HERE</a>
 
 # AngularBasics
