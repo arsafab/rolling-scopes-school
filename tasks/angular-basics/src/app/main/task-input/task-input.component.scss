@@ -1,0 +1,12 @@
+.add-task-block {
+    display: flex;
+
+    input {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .btn {
+        border-radius: 0 0.25rem 0.25rem 0;
+    }
+}

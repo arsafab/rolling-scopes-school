@@ -1,0 +1,12 @@
+.category-block {
+  margin-top: 15px;
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  li > .active {
+    font-weight: bold;
+  }
+}

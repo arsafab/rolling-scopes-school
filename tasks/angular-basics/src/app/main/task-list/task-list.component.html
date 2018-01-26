@@ -1,0 +1,15 @@
+<ul class="list-group task-block">
+  <li class="list-group-item" *ngFor="let item of activeCategory.tasks">
+    <input type="checkbox" (click)="changeStatus(item)" [checked]="item.isDone">
+
+    {{ item.title }}
+
+    <button
+      [routerLink]="[url.url, item.title]"
+      type="button"
+      class="btn btn-info btn-sm pull-right"
+      (click)="sendTask(item)">
+        <fa name="edit"></fa>
+    </button>
+  </li>
+</ul>

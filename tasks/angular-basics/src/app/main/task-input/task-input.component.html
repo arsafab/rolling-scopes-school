@@ -1,0 +1,13 @@
+<form class="add-task-block">
+  <input 
+    type="text" 
+    class="form-control" 
+    placeholder="Task name" 
+    name="add-task"
+    [(ngModel)]="inputText">
+  <input 
+    type="submit" 
+    class="btn btn-dark" 
+    value="Add" 
+    (click)="addTask()">
+</form>

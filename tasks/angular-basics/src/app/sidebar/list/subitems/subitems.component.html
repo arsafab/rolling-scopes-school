@@ -1,0 +1,36 @@
+<ul class="list-group subitems-block" *ngIf="subitem.subitems.length" [hidden]="!subitem.toggleState">
+  <li class="list-group-item" *ngFor="let subitem of subitem.subitems let i = index">
+    <button type="button" class="btn btn-info btn-sm" (click)="toggleSubitem(i)">
+      <fa *ngIf="!subitem.toggleState" name="caret-right"></fa>
+      <fa *ngIf="subitem.toggleState" name="caret-down"></fa>
+    </button>
+
+    <a [routerLink]="['/category', subitem.title]" routerLinkActive="active" (click)="sendItem(subitem)">{{ subitem.title }}</a>
+
+    <button type="button" class="btn btn-info btn-sm" (click)="edit(subitem)" *ngIf="!isOpen">
+      <fa name="edit"></fa>
+    </button>
+
+    <div class="btn-group pull-right" role="group" *ngIf="!isOpen">
+      <button
+        type="button"
+        class="btn btn-danger btn-sm"
+        mwlConfirmationPopover
+        [popoverMessage]="popoverMessage"
+        placement="left"
+        (confirm)="removeItem(i)">
+          <fa name="trash"></fa>
+      </button>
+
+      <button type="button" class="btn btn-success btn-sm" (click)="create(subitem)">
+        <fa name="plus"></fa>
+      </button>
+    </div>
+
+    <button type="button" class="btn btn-success btn-sm pull-right" *ngIf="isOpen" (click)="moveTask(subitem)">
+      <fa name="reply"></fa>
+    </button>
+
+    <app-subitems [subitem]="subitem" (edited)="edit($event)" (created)="create($event)" (disabledStatus)="changeDisabledStatus()"></app-subitems>
+  </li>
+</ul>

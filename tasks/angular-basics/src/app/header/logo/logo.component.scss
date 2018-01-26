@@ -1,0 +1,10 @@
+.logo-block {
+    img {
+        max-width: 100px;
+    }
+
+    @media screen and ( max-width: 580px) {
+      display: flex;
+      justify-content: center;
+    }
+}

@@ -1,0 +1,17 @@
+.subitems-block {
+  margin-top: 15px;
+  border-top: 1px solid #ccc;
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }  
+
+  li {
+    border: none;
+
+    & > .active {
+      font-weight: bold;
+    }
+  }
+}
