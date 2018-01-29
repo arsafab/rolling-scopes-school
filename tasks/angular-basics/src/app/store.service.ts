@@ -21,8 +21,6 @@ export class StoreService {
   undoState: string;
   redoState: string;
 
-  constructor() { }
-
   updateStore(arr: object[]): void {
     this.items.next(arr);
   }
