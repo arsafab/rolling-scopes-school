@@ -52,20 +52,20 @@ export class SearchComponent implements OnInit, DoCheck {
     }
   }
 
-  changeTypeaheadLoading(e: boolean): void {
-    this.typeaheadLoading = e;
+  changeTypeaheadLoading(loading: boolean): void {
+    this.typeaheadLoading = loading;
   }
 
-  changeTypeaheadNoResults(e: boolean): void {
-    this.typeaheadNoResults = e;
+  changeTypeaheadNoResults(hasMatches: boolean): void {
+    this.typeaheadNoResults = hasMatches;
   }
 
-  typeaheadOnSelect(e: TypeaheadMatch): void {
-    this._data.updateTask(e.item);
-    this.selectedTaskUrl = `/category/${e.item.categoryTitle}/${e.item.title}`;
+  typeaheadOnSelect(matchWord: TypeaheadMatch): void {
+    this._data.updateTask(matchWord.item);
+    this.selectedTaskUrl = `/category/${matchWord.item.categoryTitle}/${matchWord.item.title}`;
   }
 
-  setOption() {
+  setTaskDoneOption(): void {
     this.isDone = !this.isDone;
   }
 }

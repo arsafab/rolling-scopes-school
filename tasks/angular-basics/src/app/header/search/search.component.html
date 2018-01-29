@@ -1,6 +1,6 @@
 <div class="search-block">
   <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="showDone" (click)="setOption()">
+    <input type="checkbox" class="form-check-input" id="showDone" (click)="setTaskDoneOption()">
     <label class="form-check-label" for="showDone">Search done</label>
   </div>
 
@@ -15,7 +15,7 @@
           placeholder="Enter the task title"
           class="form-control">
     <div *ngIf="typeaheadLoading===true">Loading</div>
-    <div *ngIf="typeaheadNoResults===true" class="no-results-warning">&#10060; No Results Found</div>
+    <div *ngIf="typeaheadNoResults===true" class="no-results-warning">No Results Found</div>
   </div>
 
   <button class="btn btn-dark" [routerLink]="[selectedTaskUrl]">OK</button>

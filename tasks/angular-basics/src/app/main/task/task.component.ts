@@ -8,11 +8,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./task.component.scss']
 })
 export class TaskComponent implements OnInit {
-  activeTask: any;
+  activeTask: object;
   title: string;
   description: string;
   isDone: boolean;
-  url: any;
+  url: string;
   parentUrl: string;
 
   constructor(private _data: StoreService, router: Router) {
