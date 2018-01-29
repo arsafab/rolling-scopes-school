@@ -11,14 +11,14 @@ import { TypeaheadMatch } from 'ngx-bootstrap/typeahead';
 })
 
 export class SearchComponent implements OnInit, DoCheck {
-  tasks: any[];
+  tasks: object[];
   asyncSelected: string;
   typeaheadLoading: boolean;
   typeaheadNoResults: boolean;
   dataSource: Observable<any>;
   selectedTaskUrl: string;
   isDone: boolean = false;
-  doneTasks: any[] = [];
+  doneTasks: object[] = [];
 
   constructor(private _data: StoreService) {
     this.dataSource = Observable.create((observer: any) => {
