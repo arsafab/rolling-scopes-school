@@ -8,14 +8,14 @@ import { StoreService } from '../../../store.service';
 })
 
 export class SubitemsComponent implements OnInit {
-  @Input('subitem') subitem: any;
+  @Input('subitem') subitem: Object;
   @Output() edited = new EventEmitter();
   @Output() created = new EventEmitter();
   @Output() disabledStatus = new EventEmitter();
 
-  activeCategory: any = [];
-  targetCategory: any = [];
-  activeTask: any;
+  activeCategory: Object = {};
+  targetCategory: Object = {};
+  activeTask: Object;
   isOpen: boolean;
 
   constructor(private _data: StoreService) {}
@@ -43,20 +43,20 @@ export class SubitemsComponent implements OnInit {
     this.disabledStatus.emit();
   }
 
-  edit(subitem) {
+  edit(subitem: Object): void {
     subitem.editState = true;
     this.edited.emit(subitem);
   }
 
-  create(subitem) {
+  create(subitem: Object): void {
     this.created.emit(subitem);
   }
 
-  sendItem(item) {
+  sendItem(item: Object): void {
     this._data.updateCategory(item);
   }
 
-  moveTask(item) {
+  moveTask(item: Object): void {
     this._data.updateTargetCategory(item);
 
     this.activeCategory.tasks.forEach((task, i) => {
@@ -70,7 +70,7 @@ export class SubitemsComponent implements OnInit {
     this._data.updateOpenState(false);
   }
 
-  changeDisabledStatus() {
+  changeDisabledStatus(): void {
     this.disabledStatus.emit();
   }
 }

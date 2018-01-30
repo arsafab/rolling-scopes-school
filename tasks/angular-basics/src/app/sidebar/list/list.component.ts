@@ -11,10 +11,10 @@ export class ListComponent implements OnInit {
   @Output() editor = new EventEmitter();
   @Output() disabledStatus = new EventEmitter();
 
-  categories: any[];
-  activeCategory: any = [];
-  targetCategory: any = [];
-  activeTask: any;
+  categories: Object[];
+  activeCategory: Object = {};
+  targetCategory: Object = {};
+  activeTask: Object;
   popoverMessage: string = 'Remove category?';
   isOpen: boolean;
 
@@ -39,24 +39,24 @@ export class ListComponent implements OnInit {
     this.changeDisabledStatus();
   }
 
-  changeDisabledStatus() {
+  changeDisabledStatus(): void {
     this.disabledStatus.emit();
   }
 
-  edit(item) {
+  edit(item: Object): void {
     item.editState = true;
     this.editor.emit(item);
   }
 
-  create(item) {
+  create(item: Object): void {
     this.editor.emit(item);
   }
 
-  sendItem(item) {
+  sendItem(item: Object): void {
     this._data.updateCategory(item);
   }
 
-  moveTask(item) {
+  moveTask(item: Object): void {
     this._data.updateTargetCategory(item);
 
     this.activeCategory.tasks.forEach((task, i) => {

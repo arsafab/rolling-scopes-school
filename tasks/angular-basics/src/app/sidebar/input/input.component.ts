@@ -22,7 +22,7 @@ export class InputComponent implements OnInit {
     this._data.updateStore(this.categories);
   }
 
-  addCategory() {
+  addCategory(): void {
     if (this.inputText) {
       this.categories.unshift(new Category(this.inputText));
       this.inputText = '';
@@ -31,7 +31,7 @@ export class InputComponent implements OnInit {
     }
   }
 
-  changeDisabledStatus() {
+  changeDisabledStatus(): void {
     this.disabledStatus.emit(true);
   }
 }

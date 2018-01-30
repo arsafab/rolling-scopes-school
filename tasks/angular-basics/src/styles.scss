@@ -3,3 +3,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+button,
+input[type="submit"],
+label {
+    cursor: pointer;
+}

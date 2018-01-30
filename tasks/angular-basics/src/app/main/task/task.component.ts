@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./task.component.scss']
 })
 export class TaskComponent implements OnInit {
-  activeTask: object;
+  activeTask: Object;
   title: string;
   description: string;
   isDone: boolean;
@@ -27,16 +27,16 @@ export class TaskComponent implements OnInit {
     this.parentUrl = this.url.url.replace(`/${this.title}`, '');
   }
 
-  changeStatus() {
+  changeStatus(): void {
     this.isDone = !this.isDone;
   }
 
-  save() {
+  save(): void {
     this.activeTask.isDone = this.isDone;
     this._data.updateOpenState(false);
   }
 
-  cancel() {
+  cancel(): void {
     this.activeTask.title = this.title;
     this.activeTask.description = this.description;
     this._data.updateOpenState(false);

@@ -9,11 +9,15 @@
         margin-bottom: 15px;
     }
 
-    .form-check {
+    .check {
+        display: flex;
+        align-items: center;
+        padding-right: 15px;
         margin-bottom: 15px;
 
         label {
-            cursor: pointer;
+            margin-bottom:  0;
+            margin-left: 5px;
         }
     }
 

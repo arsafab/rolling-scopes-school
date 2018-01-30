@@ -5,10 +5,15 @@
     align-items: center;
     justify-content: flex-end;
 
-    .form-check label {
-        margin-right: 15px;
-        font-size: 0.9rem;
-        cursor: pointer;
+    .check {
+        display: flex;
+        align-items: center;
+        padding-right: 15px;
+
+        label {
+            margin-bottom:  0;
+            margin-left: 5px;
+        }
     }
 
     input {

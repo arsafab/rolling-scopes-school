@@ -6,9 +6,9 @@
 
   <input type="text" class="form-control" [(ngModel)]="activeTask.title">
 
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="doneTask" (click)="changeStatus()" [checked]="activeTask.isDone">
-    <label class="form-check-label" for="doneTask">Done</label>
+  <div class="check">
+    <input type="checkbox" class="check-input" id="doneTask" (click)="changeStatus()" [checked]="activeTask.isDone">
+    <label class="check-label" for="doneTask">Done</label>
   </div> 
 
   <textarea name="" class="form-control" [(ngModel)]="activeTask.description"></textarea>

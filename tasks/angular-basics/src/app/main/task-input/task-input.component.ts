@@ -11,15 +11,15 @@ import Task from '../Task';
 export class TaskInputComponent implements OnInit {
 
   inputText: string;
-  activeCategory: any;
+  activeCategory: Object;
 
   constructor(private _data: StoreService) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this._data.activeCategory.subscribe(res => this.activeCategory = res);
   }
 
-  addTask() {
+  addTask(): void {
     if (this.inputText) {
       this.activeCategory.tasks.unshift(new Task(this.inputText, this.activeCategory.title));
       this.inputText = '';
