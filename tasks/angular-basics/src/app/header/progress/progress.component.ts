@@ -8,9 +8,9 @@ import { StoreService } from '../../store.service';
 })
 
 export class ProgressComponent implements OnInit, DoCheck {
-  items: object[] = [];
-  categories: object[] = [];
-  tasks: object[] = [];
+  items: Object[] = [];
+  categories: Object[] = [];
+  tasks: Object[] = [];
   completed: number = 0;
   percent: number = 100;
 
@@ -21,14 +21,14 @@ export class ProgressComponent implements OnInit, DoCheck {
   }
 
   ngDoCheck() {
-    this.categories.length = 0;
+    this.categories = [];
     this.extractCategories(this.items);
     this.extractTasks();
     this.countCompleted();
     this.countPercent();
   }
 
-  extractCategories(arr: object[]): void {
+  extractCategories(arr: Object[]): void {
     arr.forEach((item) => {
         this.categories.push(item);
         if (item.subitems.length) {
@@ -38,7 +38,7 @@ export class ProgressComponent implements OnInit, DoCheck {
   }
 
   extractTasks(): void {
-    this.tasks.length = 0;
+    this.tasks = [];
     this.categories.forEach((item) => {
        item.tasks.forEach(task => this.tasks.push(task));
     });
@@ -46,7 +46,7 @@ export class ProgressComponent implements OnInit, DoCheck {
   }
 
   countCompleted(): void {
-    this.completed = this.tasks.filter((item) => item.isDone).length;
+    this.completed = this.tasks.filter((item: any) => item.isDone).length;
   }
 
   countPercent(): void {
