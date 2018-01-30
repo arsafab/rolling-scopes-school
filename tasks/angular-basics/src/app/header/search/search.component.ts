@@ -13,8 +13,8 @@ import { TypeaheadMatch } from 'ngx-bootstrap/typeahead';
 export class SearchComponent implements OnInit, DoCheck {
   tasks: Object[];
   asyncSelected: string;
-  typeaheadLoading: boolean;
-  typeaheadNoResults: boolean;
+  loading: boolean;
+  noResults: boolean;
   dataSource: Observable<any>;
   selectedTaskUrl: string;
   isDone: boolean = false;
@@ -31,7 +31,7 @@ export class SearchComponent implements OnInit, DoCheck {
   }
 
   ngDoCheck() {
-    this.doneTasks = this.tasks.filter(item => item.isDone);
+    this.doneTasks = this.tasks.filter((item: any) => item.isDone);
   }
 
   getStatesAsObservable(token: string): Observable<any> {
@@ -52,15 +52,15 @@ export class SearchComponent implements OnInit, DoCheck {
     }
   }
 
-  changeTypeaheadLoading(loading: boolean): void {
-    this.typeaheadLoading = loading;
+  showLoading(loading: boolean): void {
+    this.loading = loading;
   }
 
-  changeTypeaheadNoResults(hasMatches: boolean): void {
-    this.typeaheadNoResults = hasMatches;
+  showNoResults(hasMatches: boolean): void {
+    this.noResults = hasMatches;
   }
 
-  typeaheadOnSelect(matchWord: TypeaheadMatch): void {
+  onSelect(matchWord: TypeaheadMatch): void {
     this._data.updateTask(matchWord.item);
     this.selectedTaskUrl = `/category/${matchWord.item.categoryTitle}/${matchWord.item.title}`;
   }

@@ -1,6 +1,9 @@
 import { Component, OnInit, DoCheck } from '@angular/core';
 import { StoreService } from '../../store.service';
 
+import Task from '../../main/Task';
+import Category from '../../sidebar/list/Category';
+
 @Component({
   selector: 'app-progress',
   templateUrl: './progress.component.html',
@@ -23,7 +26,7 @@ export class ProgressComponent implements OnInit, DoCheck {
   ngDoCheck() {
     this.categories = [];
     this.extractCategories(this.items);
-    this.extractTasks();
+    this.extractTasks(this.tasks);
     this.countCompleted();
     this.countPercent();
   }
@@ -37,16 +40,16 @@ export class ProgressComponent implements OnInit, DoCheck {
     });
   }
 
-  extractTasks(): void {
-    this.tasks = [];
-    this.categories.forEach((item) => {
+  extractTasks(arr: Object[]): void {
+    arr = [];
+    arr.forEach((item) => {
        item.tasks.forEach(task => this.tasks.push(task));
     });
     this._data.updateAllTasks(this.tasks);
   }
 
   countCompleted(): void {
-    this.completed = this.tasks.filter((item: any) => item.isDone).length;
+    this.completed = this.tasks.filter(item => item.isDone).length;
   }
 
   countPercent(): void {
