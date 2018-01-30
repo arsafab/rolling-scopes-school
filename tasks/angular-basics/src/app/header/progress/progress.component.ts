@@ -11,9 +11,9 @@ import Category from '../../sidebar/list/Category';
 })
 
 export class ProgressComponent implements OnInit, DoCheck {
-  items: Object[] = [];
-  categories: Object[] = [];
-  tasks: Object[] = [];
+  items: Category[] = [];
+  categories: Category[] = [];
+  tasks: Task[] = [];
   completed: number = 0;
   percent: number = 100;
 
@@ -24,15 +24,16 @@ export class ProgressComponent implements OnInit, DoCheck {
   }
 
   ngDoCheck() {
+   // console.log(this.categories[0].tasks)
     this.categories = [];
     this.extractCategories(this.items);
-    this.extractTasks(this.tasks);
+    this.extractTasks();
     this.countCompleted();
     this.countPercent();
   }
 
-  extractCategories(arr: Object[]): void {
-    arr.forEach((item) => {
+  extractCategories(arr: Category[]): void {
+    this.items.forEach((item) => {
         this.categories.push(item);
         if (item.subitems.length) {
           this.extractCategories(item.subitems);
@@ -40,9 +41,9 @@ export class ProgressComponent implements OnInit, DoCheck {
     });
   }
 
-  extractTasks(arr: Object[]): void {
-    arr = [];
-    arr.forEach((item) => {
+  extractTasks(): void {
+    this.tasks = [];
+    this.tasks.forEach((item) => {
        item.tasks.forEach(task => this.tasks.push(task));
     });
     this._data.updateAllTasks(this.tasks);
