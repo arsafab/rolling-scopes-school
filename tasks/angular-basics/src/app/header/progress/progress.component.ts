@@ -24,7 +24,6 @@ export class ProgressComponent implements OnInit, DoCheck {
   }
 
   ngDoCheck() {
-   // console.log(this.categories[0].tasks)
     this.categories = [];
     this.extractCategories(this.items);
     this.extractTasks();
