@@ -31,3 +31,4 @@ These are task for the Rolling Scopes school where I was a student from Septembe
 ### Stage II
 
 * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/react-basics">React Basics</a>
+* <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/node-pagespeed">Node-pagespeed</a>
