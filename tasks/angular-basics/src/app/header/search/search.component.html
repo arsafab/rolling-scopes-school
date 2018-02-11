@@ -1,0 +1,22 @@
+<div class="search-block">
+  <div class="check">
+    <input type="checkbox" class="check-input" id="showDone" (click)="setTaskDoneOption()">
+    <label class="check-label" for="showDone">Search done</label>
+  </div>
+
+  <div>
+    <input [(ngModel)]="asyncSelected"
+          [typeahead]="dataSource"
+          (typeaheadLoading)="showLoading($event)"
+          (typeaheadNoResults)="showNoResults($event)"
+          (typeaheadOnSelect)="onSelect($event)"
+          [typeaheadOptionsLimit]="7"
+          typeaheadOptionField="title"
+          placeholder="Enter the task title"
+          class="form-control">
+    <div *ngIf="loading===true">Loading</div>
+    <div *ngIf="noResults===true" class="no-results-warning">No Results Found</div>
+  </div>
+
+  <button class="btn btn-dark" [routerLink]="[selectedTaskUrl]">OK</button>
+</div>

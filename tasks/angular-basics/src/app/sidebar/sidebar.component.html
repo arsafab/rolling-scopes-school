@@ -1,0 +1,31 @@
+<aside>
+    <app-input (disabledStatus)="changeDisabledStatus($event)"></app-input>
+
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-dark btn-sm" [disabled]="disabledStatus" (click)="undo()">
+            Undo
+        </button>
+
+        <button type="button" class="btn btn-dark btn-sm" [disabled]="redoStatus" (click)="redo()">
+            Redo
+        </button>
+    </div>
+
+
+  <app-list (editor)="openEditor($event, editor)" (disabledStatus)="changeDisabledStatus($event)"></app-list>
+</aside>
+
+<ng-template #editor>
+    <div class="modal-body text-center">
+        <form class="edit-category-block">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter category name"
+              name="add-category"
+              [(ngModel)]="inputText">
+            <button type="button" class="btn btn-default" (click)="modalRef.hide()">Cancel</button>
+            <button type="submit" class="btn btn-success" (click)="editTitle()">OK</button>
+        </form>
+    </div>
+</ng-template>

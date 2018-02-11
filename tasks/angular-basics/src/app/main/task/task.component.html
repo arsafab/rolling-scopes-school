@@ -1,0 +1,15 @@
+<div class="task-block">
+  <div class="btn-group pull-right" role="group">
+    <button [routerLink]="[parentUrl]" type="button" class="btn btn-success btn-sm" (click)="save()">Save changes</button>
+    <button [routerLink]="[parentUrl]" type="button" class="btn btn-danger btn-sm" (click)="cancel()">Cancel</button>  
+  </div>
+
+  <input type="text" class="form-control" [(ngModel)]="activeTask.title">
+
+  <div class="check">
+    <input type="checkbox" class="check-input" id="doneTask" (click)="changeStatus()" [checked]="activeTask.isDone">
+    <label class="check-label" for="doneTask">Done</label>
+  </div> 
+
+  <textarea name="" class="form-control" [(ngModel)]="activeTask.description"></textarea>
+</div>

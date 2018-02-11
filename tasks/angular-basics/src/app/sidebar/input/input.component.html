@@ -1,0 +1,13 @@
+<form class="add-category-block">
+  <input 
+    type="text" 
+    class="form-control" 
+    placeholder="Category name" 
+    name="add-category"
+    [(ngModel)]="inputText">
+  <input 
+    type="submit" 
+    class="btn btn-dark" 
+    value="Add" 
+    (click)="addCategory()">
+</form>

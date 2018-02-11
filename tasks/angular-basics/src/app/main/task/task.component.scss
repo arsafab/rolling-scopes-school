@@ -1,0 +1,28 @@
+.task-block {
+    .btn-group {
+        margin-bottom: 15px;
+    }
+
+    input[type="text"] {
+        clear: both;
+        max-width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .check {
+        display: flex;
+        align-items: center;
+        padding-right: 15px;
+        margin-bottom: 15px;
+
+        label {
+            margin-bottom:  0;
+            margin-left: 5px;
+        }
+    }
+
+    textarea {
+        resize: none;
+        min-height: 200px;
+    }
+}

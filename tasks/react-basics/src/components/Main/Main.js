@@ -72,6 +72,7 @@ class Main extends React.Component {
                                 key={this.key++}
                                 task={item}
                                 taskArray={this.props.location.query.tasks}
+                                activeItem={this.props.location.query}
                             />
                         ))
                     }

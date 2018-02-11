@@ -38,7 +38,8 @@ main .task-list {
 
 .task-container .btnGroup {
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  margin-bottom: 15px; }
   .task-container .btnGroup a {
     display: block;
     border: 1px solid #ccc;
@@ -59,3 +60,7 @@ main .task-list {
 .task-container textarea {
   resize: none;
   min-height: 200px; }
+
+.task-container .move-block button {
+  margin-right: 5px;
+  margin-bottom: 10px; }
