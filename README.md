@@ -19,6 +19,7 @@ These are task for the Rolling Scopes school where I was a student from Septembe
 3. RS2018
     * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/warmup">Warmup</a>
     * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/love-triangle">Love trianle</a>
+    * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/sorter">Sorter</a>
 
 ### Stage II
 
