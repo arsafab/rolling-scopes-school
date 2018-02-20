@@ -16,6 +16,9 @@ These are task for the Rolling Scopes school where I was a student from Septembe
     * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/tic-tac-toe">Tic Tac Toe</a>
     * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/finite-state-machine">Finite State Machine</a>
 
+3. RS2018
+    * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/warmup">Warmup</a>
+
 ### Stage II
 
 * <a href="https://www.codeschool.com/users/arsafab">Chrome Dev Tools Online Course</a>
