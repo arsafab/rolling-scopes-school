@@ -23,6 +23,7 @@ These are task for the Rolling Scopes school where I was a student from Septembe
     * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/quadratic-equation">Quadratic equation</a>
 	* <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/money-exchange">Money exchange</a>
     * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/zero-simple-version">Zero simple version</a>
+    * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/zero-advanced">Zero advanced</a>
 
 ### Stage II
 
