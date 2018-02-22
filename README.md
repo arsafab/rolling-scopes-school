@@ -26,6 +26,7 @@ These are task for the Rolling Scopes school where I was a student from Septembe
     * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/zero-advanced">Zero advanced</a>
     * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/sudoku">Sudoku</a>longest-consecutive-sequence
     * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/longest-consecutive-sequence">Longest consecutive sequence</a>
+    * <a href="https://github.com/arsafab/rolling-scopes-school/tree/master/tasks/smart-calculator">Smart calculator</a>
 
 ### Stage II
 
