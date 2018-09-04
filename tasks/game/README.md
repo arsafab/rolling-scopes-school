@@ -16,5 +16,5 @@
 * Game support resolution from 600px and more
 
 ### Links: 
-* Link to the landing page - **https://arsafab.github.io/meteora/**
-* Link to the game - **https://arsafab.github.io/meteora/game**
+* Link to the landing page - **https://arsafab.github.io/rolling-scopes-school/tasks/game/public/index.html**
+* Link to the game - **https://arsafab.github.io/rolling-scopes-school/tasks/game/public/game.html**
